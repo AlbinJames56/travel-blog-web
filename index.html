@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I am Aileen • Lifestyle & Travel Blog</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha385-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha385-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Travelers+Handwriting&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ms-5 me-5">
+          <a class="navbar-brand ms-5" href="#">
+            <img height="40px" src="./assets/nav-main-travel-logo.jpg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link dropdown-head" aria-current="page" href="#">
+                  HOME
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle dropdown-head"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ABOUT
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-md-6 p-4 pt-1">
+                      <img
+                        height="80px"
+                        src="./assets/Author-img.jpg"
+                        alt="Author img"
+                      />
+                      <a class="dropdown-head" href="">THE AUTHOR</a>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Who is Ailen?</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">FAQ</a></li>
+                      <li><a class="dropdown-item" href="#">Timeline</a></li>
+                      <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                    </div>
+                    <div class="col-md-6 p-4 pt-1">
+                      <img
+                        height="80px"
+                        src="./assets/abt-blog-img.jpg"
+                        alt="Author img"
+                      />
+                      <li><a class="dropdown-head" href="">THE BLOG</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Press</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Work with me</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Archives</a></li>
+                      <li><a class="dropdown-item" href="#">Disclaimer</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-head" href="#">BLOG</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle dropdown-head"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  RESOURCES
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-md-6 p-4 pt-1">
+                      <img
+                        height="80px"
+                        src="./assets/resorce-travel.jpg"
+                        alt="Author img"
+                      />
+                      <a class="dropdown-head" href="">FOR TRAVEL</a>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Resources & Tips</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Activities</a></li>
+                      <li><a class="dropdown-item" href="#">Itineraries</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                    </div>
+                    <div class="col-md-6 p-4 pt-1">
+                      <img
+                        height="80px"
+                        src="./assets/resorce-remote.jpg"
+                        alt="Author img"
+                      />
+                      <li><a class="dropdown-head" href="">THE REMOTE</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Digital Nomad Tips</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Blogging & Vlogging
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Social Media Tips</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Personal Development
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle dropdown-head"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  DESTINATIONS
+                </a>
+                <ul type="none" class="dropdown-menu Destinations">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span style="color: rgb(246, 104, 3);">
+                        All Destinations
+                      </span>
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Africa</a></li>
+                  <li><a class="dropdown-item" href="#">Antarctica</a></li>
+                  <li><a class="dropdown-item" href="#">Asia</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Australia & Oceania</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Central America & The Caribbean
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Europe</a></li>
+                  <li><a class="dropdown-item" href="#">Middle East</a></li>
+                  <li><a class="dropdown-item" href="#">North America</a></li>
+                  <li><a class="dropdown-item" href="#">South America</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-head" href="#">FOOD</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle dropdown-head"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul class="dropdown-menu Destinations">
+                  <li><a class="dropdown-item" href="#">Travel Gear</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Lightrooms Presents</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-head" href="#">CONTACT</a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    width="30px"
+                    src="https://static.thenounproject.com/png/2002392-200.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- banner -->
+    <section id="Home">
+      <div class="banner">
+        <div class="container text-center p-5 w-50">
+          <h1>I am Aileen</h1>
+          <p>
+            Award-winning solo female travel blog of Aileen Adalid from the
+            Philippines featuring travel guides, resources, tips, and videos
+            from all over the world
+          </p>
+          <div class="buttons">
+            <button class="btn1 btn">ABOUT ME</button> 
+            <button class="btn2 btn">WATCH VLOGS</button>
+          </div>
+        </div>
+        <div class="img">
+          <img src="./assets/bg-transparent.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- posts -->
+    <section id="posts">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-7 col-sm-12 col-xs-12">
+            <h2 class="text-center">
+              recent
+              <span
+                style="
+                  color: white;
+                  background: #ff6a6a;
+                  padding: 5px;
+                  height: 10px;
+                  font-family: 'Montserrat', Helvetica, Arial, Lucida,
+                    sans-serif;
+                  font-size: 25px;
+                  font-weight: bold;
+                "
+              >
+                POSTS
+              </span>
+            </h2>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="card">
+                  <div class="card-body d-flex">
+                    <img
+                      src="./assets/card-img1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Top 20 Philippine Online Shipping Sites for Gifts Ideas &
+                      More
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="card">
+                  <div class="card-body d-flex">
+                    <img
+                      src="./assets/card-img2.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Top Tips to Stay Safe Online While Traveling
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="card mt-3">
+                  <div class="card-body d-flex">
+                    <img
+                      src="./assets/card-img3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Korean Visa Korean Visa Application Requirements for
+                      Filipino Tourists in Manila,
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="card mt-3">
+                  <div class="card-body d-flex">
+                    <img
+                      src="./assets/card-img4.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Top 10 Things to Do on a Trip to South America Top 10
+                      Things to Do on a Trip to South America
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                class="text-center pt-3"
+                style="
+                  text-decoration: none;
+                  font-weight: bold;
+                  font-size: small;
+                  color: rgb(77, 76, 76);
+                "
+                href=""
+              >
+                …SEE ALL POSTS »
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h2 class="text-center">
+              latest
+              <span
+                style="
+                  color: white;
+                  background: #ff6a6a;
+                  padding: 5px;
+                  height: 10px;
+                  font-family: 'Montserrat', Helvetica, Arial, Lucida,
+                    sans-serif;
+                  font-size: 25px;
+                  font-weight: bold;
+                "
+              >
+                VLOG
+              </span>
+            </h2>
+            <div class="p-5 pt-0 ms-3">
+              <div>
+                <iframe
+                  width="320"
+                  height="165"
+                  src="https://www.youtube.com/embed/AnCPkOJput8?si=YGqsSm4l52eQwFuV"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="text-center pt-1">
+                <a
+                  style="
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: small;
+                    color: rgb(77, 76, 76);
+                  "
+                  href=""
+                >
+                  …SEE ALL POSTS »
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- destination guide -->
+    <section class="destination-guide" id="destination-guide">
+      <img src="./assets/bg-transparent-inverted.svg" alt="" />
+      <div class="mt-3">
+        <h2 class="text-center">
+          destinations
+          <span
+            style="
+              color: white;
+              background: #ff6a6a;
+              padding: 5px;
+              height: 10px;
+              font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+              font-size: 25px;
+              font-weight: bold;
+            "
+          >
+            GUIDES
+          </span>
+        </h2>
+        <div class="continents">
+          <div class="container d-flex p-5">
+            <div>
+              <a href="">
+                <img src="./assets/africa.png" alt="africa" />
+                <h6>AFRICA</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="./assets/antartica.png" alt="africa" />
+                <h6>ANTARCTICA</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="./assets/asia.png" alt="africa" />
+                <h6>ASIA</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="./assets/america.png" alt="africa" />
+                <h6>
+                  CARIBBEAN&
+                  <br />
+                  CENTRAL
+                </h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="./assets/destination-europe-travel-guides.png"
+                  alt="africa"
+                />
+                <h6>EUROPE</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="./assets/destination-middle-east-travel-guides.png"
+                  alt="africa"
+                />
+                <h6>MIDDLE EAST</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="./assets/destination-australia-oceania-travel-guides.png"
+                  alt="africa"
+                />
+                <h6>OCEANIA</h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="./assets/destination-north-america-travel-guides.png"
+                  alt="africa"
+                />
+                <h6>
+                  NORTH
+                  <br />
+                  AMERICA
+                </h6>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="./assets/destination-south-america-travel-guides.png"
+                  alt="africa"
+                />
+                <h6>SOUTH AMERICA</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pospular posts -->
+    <section class="popular-posts" id="popular-posts">
+      <div class="container">
+        <h2 class="text-center">
+          latest
+          <span
+            style="
+              color: white;
+              background: #ff6a6a;
+              padding: 5px;
+              height: 10px;
+              font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+              font-size: 25px;
+              font-weight: bold;
+            "
+          >
+            POSTS
+          </span>
+        </h2>
+        <div class="row cards">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card1 text-center p-5">
+                <h3>HOW TO TRAVEL</h3>
+                <h6>THE WORLD</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card2 text-center p-5">
+                <h3>HOW TO BECOME</h3>
+                <h6>A DIGITAL NOMAD</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card3 text-center p-5">
+                <h3>HOW TO START</h3>
+                <h6>A SUCCESSFUL BLOG</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card4 text-center p-5">
+                <h3>TRAVEL QUOTES</h3>
+                <h6>BEST 100+ CAPTIONS</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row imgCards me-4 pt-4">
+          <div class="col-md-2 imgCardfirst">
+              <img src="./assets/airoplane.jpg" alt="">
+          </div>
+          <div class="col-md-2 imgCard">
+              <img src="./assets/waterfalls.jpg" alt="">
+          </div>
+          <div class="col-md-2 imgCard">
+              <img src="./assets/galaxy.jpg" alt="">
+          </div>
+          <div class="col-md-2 imgCard">
+              <img src="./assets/taj.jpg" alt="">
+          </div>
+          <div class="col-md-2 imgCard">
+              <img src="./assets/beach.jpg" alt="">
+          </div>
+          <div class="col-md-2 imgCardlast">
+              <img src="./assets/waterfalls.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- as see on -->
+     <section class="asseeon">
+      <div class="container w-75 mb-4">
+        <hr class="custom-hr">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href=""><h6>AS SEEN ON »</h6></a>
+          <a href=""><img width="600px" src="./assets/bbc.jpg" alt=""></a>
+          <a href=""><h6>…AND MORE!</h6></a>
+        </div>
+      </div>
+     </section>
+
+     <!-- FOOTER -->
+      <section id="Footer">
+        <div class="container w-75">
+          <div class="row">
+            <div class="col-md-3 footer1">
+              <img height="150px" src="./assets/footer-logo-vertical-iaa-travel-blog.jpg" alt="">
+               
+                 <div>
+                    <i class="fa-brands fa-youtube icon"  ></i>
+                    <i class="fa-brands fa-tiktok icon"></i>
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <i class="fa-brands fa-facebook icon"></i>
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <i class="fa-brands fa-pinterest icon"></i>
+                 </div> 
+            </div>
+            <div class="col-md-4 footer2 text-center ps-4 pe-4">
+              <h6>QUICK LINKS</h6>
+              <div><a href="">Request a Blog Post Topic</a></div>
+              <div><a href="">Lightroom Presets</a></div>
+              <div><a href="">Work with Me</a></div>
+              <div><a href="">FAQ</a></div>
+              <div><a href="">Terms of Use</a></div>
+              <div><a href="">Contact Aileen</a></div>
+            </div>
+            <div class="col-md-5 footer3 text-center ps-5">
+              <h6>JOIN THE IAA TRAVEL TRIBE</h6>
+              <p>Be a part of over 1 million people worldwide and receive exclusive giveaways, travel tips, updates, and more!</p>
+              <form action="">
+                <input type="text" placeholder="Name" class="form-control">
+                <input type="email" placeholder="Email" class="form-control mt-2">
+                <button class="btn btn-form rounded-pill mt-2"><h6>SUBSCRIBE NOW!</h6></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>

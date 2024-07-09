@@ -1,0 +1,314 @@
+nav{
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif ;
+    font-size:x-small;
+    font-weight:bold
+}
+.dropdown-menu{
+    width: 330px;
+    font-size: x-small;
+    border-radius: 0;
+    border: 0;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0; /* Adjust as needed */
+}
+.Destinations{ 
+    width: 180px;
+    
+}
+.Destinations .dropdown-item{
+    
+    font-size: x-small;
+    font-weight: 600;
+}
+.Destinations .dropdown-item:hover{
+    color: rgb(153, 153, 241);
+    background: #d3d3d3;
+}
+.dropdown-head{
+    text-decoration: none;
+    color: rgb(144, 144, 144); 
+}
+.dropdown-head:hover{
+    color: rgb(153, 153, 241);
+    background:none;
+}
+.dropdown-item:hover{
+    color: rgb(153, 153, 241);
+    background:none;
+}
+
+/* Banner */
+.banner{
+    background-image: url(./assets/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+@font-face {
+    font-family: 'Travelers Handwriting';
+    src: url('path/to/TravelersHandwriting.woff2') format('woff2'),
+         url('path/to/TravelersHandwriting.woff') format('woff'),
+         url('path/to/TravelersHandwriting.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 63px; 
+    color: #5e5e5e;
+    text-align: center;
+}
+.banner p{
+    margin-top: -20px;
+}
+
+.img img{
+    width: 100%;
+    height: 60px;
+}
+.btn1 {
+    background: #ec72728f;
+    color: #ffffff;
+    height: 30px;
+    font-size: smaller;
+    position: relative;
+    transition: all 0.3s ease;
+    padding-right: 20px; /* Add some padding to the right for the arrows */
+    border: none;
+    cursor: pointer;
+    width: auto;
+    }
+    
+    .btn1::after {
+        content: ">>";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease, right 0.3s ease;
+    }
+    
+    .btn1:hover::after { 
+     opacity: 1;
+    }
+    .btn1:hover {
+        background: #ec72728f;  
+        color: #ffffff;
+      width: 120px;
+     
+    }
+   
+    .btn2 {
+        background:#678ffd81;
+        color: #ffffff;
+        height: 30px;
+        font-size: smaller;
+        position: relative;
+        transition: all 0.3s ease;
+        padding-right: 20px; /* Add some padding to the right for the arrows */
+        border: none;
+        cursor: pointer;
+        width: auto;
+        }
+        
+        .btn2::after {
+            content: ">>";
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease, right 0.3s ease;
+        }
+        
+        .btn2:hover::after { 
+         opacity: 1;
+        }
+        .btn2:hover {
+            background: #678ffd81;
+            color: #ffffff;
+          width: 140px;
+         
+        }
+        
+
+.btn2{
+    background: #678ffd81;
+    color: #ffffff;
+    height: 30px;
+    font-size:smaller;
+}
+
+/* cards  */
+ h2{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 45px; 
+}
+.card{
+    width: 300px; 
+    
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.164);
+   
+}
+.card img{ 
+    width: 100px; 
+    border-radius: 10px 0 0 10px;
+}
+.card-body{
+    padding: 0;
+}
+.card p{
+    font-size: x-small;
+    padding: 19px;
+}
+/* DESTINATION GUIDE */
+.destination-guide{
+    
+    background-color:#dedede ;
+}
+.destination-guide img{
+    width: 100%;
+    height: 60px;
+}
+.continents{
+    background-image: url(./assets/trail-map-bg.png);
+    background-repeat: no-repeat;
+}
+.continents img{
+    width: 100px;
+}
+.continents h6{
+    color: #545353;
+    display: block;
+    margin-left: 2rem;
+}
+.continents a{
+    text-decoration: none;
+}
+
+/* popular posts */
+.popular-posts{
+    padding-top: 10px;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%);
+}
+.popular-posts .card{
+    width: 250px;
+    height: 150px;
+    color: white;
+}
+.popular-posts .card:hover{
+    box-shadow: 255px 255px 255px 255px rgba(0, 0, 0, 0.08) inset;
+}
+.popular-posts h3{
+    color: white;
+    text-shadow: 2px 2px rgb(96, 96, 96);
+    font-size:larger;
+}
+.popular-posts h6{
+    color: white;
+    text-shadow: 2px 2px rgb(96, 96, 96);
+    font-size:small;
+}
+.card1{
+    background-image: url(./assets/rosetree&river.jpg);
+    background-repeat: no-repeat;
+    height: 150px;
+    border-radius: 10px;
+}
+.card2{
+    background-image: url(./assets//boy-laptop-pool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+.card3{
+    background-image: url(./assets/lap-glass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+.card4{
+    background-image: url(./assets/river-girl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.imgCard img{
+    width: 190px;
+    
+}
+.imgCardfirst img {
+    width: 190px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.imgCardlast img {
+    width: 190px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+ 
+.custom-hr {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #c40303;
+   
+}
+
+.asseeon a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-size: smaller;
+}
+#Footer{
+    background-color: #f9f6f6;
+    padding: 39px;
+}
+.icon{
+  background:#f76969;
+  border-radius: 50% ;
+  padding:4.5px ; 
+  margin-top: 10px;
+  color: #ffffff;
+  width: 25px;
+  height:  25px;
+}
+.footer2{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+.footer2,.footer3 h6,p{
+    color: #5e5e5e;
+}
+.footer2  a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-size: x-smaller;
+}
+.form-control{
+    font-size: x-small;
+    border: none; 
+}
+.btn-form{
+    background-color: #f76969;
+   
+    width: 100%;
+    height:25px;
+}
+.btn-form h6{
+     color: #ffffff;
+     font-size: x-small;
+}
