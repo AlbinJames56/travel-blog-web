@@ -47,16 +47,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 } 
-@font-face {
-    font-family: 'Travelers Handwriting';
-    src: url('path/to/TravelersHandwriting.woff2') format('woff2'),
-         url('path/to/TravelersHandwriting.woff') format('woff'),
-         url('path/to/TravelersHandwriting.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.banner h1{
+ .banner h1{
     font-family: 'Brush Script MT', cursive;
     font-size: 63px; 
     color: #5e5e5e;
@@ -155,18 +146,52 @@ nav{
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.164);
+    position: relative;
+  overflow: hidden;
    
 }
-.card img{ 
+.card p:hover{
+    color:#f76969;
+}
+.a-hov{
+    text-decoration: none;
+                  font-weight: bold;
+                  font-size: small;
+                  color: rgb(77, 76, 76);
+}
+ .a-hov:hover{
+    color:#f76969;
+}
+.img-container {
+    position: relative;
+  }
+.card-img-top{ 
+    transition: all 0.3s ease;
     width: 100px; 
+    height: 68px;
     border-radius: 10px 0 0 10px;
 }
+.img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .img-container:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
 .card-body{
     padding: 0;
 }
 .card p{
     font-size: x-small;
-    padding: 19px;
+    padding : 10px 0 0 10px;
 }
 /* DESTINATION GUIDE */
 .destination-guide{
@@ -217,6 +242,46 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 10
     text-shadow: 2px 2px rgb(96, 96, 96);
     font-size:small;
 }
+.card {
+    position: relative;
+    overflow: hidden; /* Ensure the overlay doesn't overflow the card */
+}
+
+.card1, .card2 , .card3, .card4{
+    position: relative;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    height: 150px;
+    border-radius: 10px;
+    color: white; /* Ensure text is readable */
+    z-index: 0; /* Ensure the text is above the overlay */
+}
+
+.card1::before, .card2::before, .card3::before, .card4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+    z-index: -1; /* Ensure the overlay is behind the text */
+}
+
+.card1:hover::before, .card2:hover::before, .card3:hover::before, .card4:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Optional: Adjust text styles for better readability */
+.card1 h3, .card2 h3, .card3 h3, .card4 h3, .card1 h6, .card2 h6, .card3 h6, .card h6 {
+    margin: 0;
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
 .card1{
     background-image: url(./assets/rosetree&river.jpg);
     background-repeat: no-repeat;
@@ -244,22 +309,40 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 10
     height: 150px;
     border-radius: 10px;
 }
+.imgCard, .imgCardfirst, .imgCardlast {
+    position: relative;
+}
 
-.imgCard img{
+.imgCard img, .imgCardfirst img, .imgCardlast img {
     width: 190px;
-    
+    display: block;
+    border-radius: inherit;
+    transition: all 0.3s ease;
 }
 .imgCardfirst img {
-    width: 190px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .imgCardlast img {
-    width: 190px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
- 
+.imgCard::before, .imgCardfirst::before, .imgCardlast::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 190px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: inherit; /* Ensure the overlay respects the border radius */
+}
+
+.imgCard:hover::before, .imgCardfirst:hover::before, .imgCardlast:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
 .custom-hr {
     width: 600px;
     margin-left: auto;
@@ -286,6 +369,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 10
   width: 25px;
   height:  25px;
 }
+.icon:hover{
+    background: #678ffd81;
+}
 .footer2{
     border-left: 1px solid #d8d8d8;
     border-right: 1px solid #d8d8d8;
@@ -298,6 +384,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 10
     color: #5e5e5e;
     font-size: x-smaller;
 }
+.footer2 a:hover{
+    color: #f76969;
+}
 .form-control{
     font-size: x-small;
     border: none; 
@@ -307,6 +396,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 10
    
     width: 100%;
     height:25px;
+}
+.btn-form:hover{
+    background-color: #678ffd81;
 }
 .btn-form h6{
      color: #ffffff;
